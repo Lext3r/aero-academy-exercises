@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Pacifico";
+    src : url("../fonts/Pacifico.ttf") ;
+}
+
+.header{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    .logo{
+        width: 600px;
+    }
+}
+h1{
+    font-family: 'Pacifico';
+    color:#900;
+}

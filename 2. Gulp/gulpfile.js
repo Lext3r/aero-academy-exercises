@@ -75,7 +75,7 @@ gulp.task('images', ()=>{
 
 gulp.task('copy', ()=>{
     return gulp
-    .src(`${PATHS.app}/common/fonts/**/*`, { since: gulp.lastRun("copy") })
+    .src(`${PATHS.app}/common/fonts/**/*.*`, { since: gulp.lastRun("copy") })
     .pipe(plumber())
     .pipe(gulp.dest(`${PATHS.dist}/assets/fonts`));
 });

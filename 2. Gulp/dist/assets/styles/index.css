@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico.ttf"); }
+
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center; }
+  .header .logo {
+    width: 600px; }
+
+h1 {
+  font-family: 'Pacifico';
+  color: #900; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSx1QkFBdUI7RUFDdkIsaUNBQWtDLEVBQUE7O0FBR3RDO0VBQ0ksYUFBYTtFQUNiLGNBQWM7RUFDZCxrQkFBa0IsRUFBQTtFQUh0QjtJQUtRLFlBQVksRUFBQTs7QUFHcEI7RUFDSSx1QkFBdUI7RUFDdkIsV0FBVSxFQUFBIiwiZmlsZSI6ImluZGV4LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xyXG4gICAgZm9udC1mYW1pbHk6IFwiUGFjaWZpY29cIjtcclxuICAgIHNyYyA6IHVybChcIi4uL2ZvbnRzL1BhY2lmaWNvLnR0ZlwiKSA7XHJcbn1cclxuXHJcbi5oZWFkZXJ7XHJcbiAgICB3aWR0aDogMTIwMHB4O1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAubG9nb3tcclxuICAgICAgICB3aWR0aDogNjAwcHg7XHJcbiAgICB9XHJcbn1cclxuaDF7XHJcbiAgICBmb250LWZhbWlseTogJ1BhY2lmaWNvJztcclxuICAgIGNvbG9yOiM5MDA7XHJcbn0iXX0= */

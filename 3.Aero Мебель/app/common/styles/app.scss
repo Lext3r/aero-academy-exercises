@@ -1,0 +1,31 @@
+
+// Variables
+@import 'variables/colors';
+@import 'variables/measures';
+@import 'variables/typography';
+@import 'variables/grid.scss';
+@import 'variables/animation.scss';
+
+//Core styles
+@import 'core/fonts';
+@import 'core/base';
+@import 'core/typography';
+
+// Pages
+
+// Components
+@import '../../components/footer/footer.scss';
+@import '../../components/header/header.scss';
+@import '../../components/logo/logo.scss';
+@import '../../components/icon-btn/icon-btn.scss';
+@import '../../components/search/search.scss';
+@import '../../components/menu/menu.scss';
+@import '../../components/breadcrumbs/breadcrumbs.scss';
+@import '../../components/link/link.scss';
+@import '../../components/page-title/page-title.scss';
+@import '../../components/item-card/item-card.scss';
+
+
+// Helpers
+@import '../styles/helpers/sprites.scss';
+@import '../styles/helpers/bootstrap.scss';

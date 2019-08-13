@@ -1,0 +1,17 @@
+mixin menu(items)
+    nav.menu
+        ul.menu__list
+            if items
+                each item in items
+                    li.menu__category
+                        a.menu__link.link(href=item.url)= item.title
+                        if item.subcategories
+                            ul.menu__subcategories
+                                each subcategory in item.subcategories
+                                    li.menu__subcategory
+                                        a.menu__sub-link.link(href=subcategory.url)= subcategory.title
+                                        
+                                
+                    
+
+

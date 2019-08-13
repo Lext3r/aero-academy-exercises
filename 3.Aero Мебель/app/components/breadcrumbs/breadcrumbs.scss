@@ -1,0 +1,18 @@
+.breadcrumbs{
+    display: flex;
+    justify-content: center;
+
+    &__list{
+        display: flex;
+        &:last-child{
+            color: color('grey-dark');
+        }
+    }
+
+    &__separator{
+        margin: 0 10px;
+    }
+    &__item{
+        list-style-type: none;
+    }
+}

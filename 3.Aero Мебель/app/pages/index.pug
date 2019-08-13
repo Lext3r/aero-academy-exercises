@@ -1,0 +1,52 @@
+extends ../layout/default/default
+include ../components/breadcrumbs/breadcrumbs
+include ../components/page-title/page-title
+include ../components/item-card/item-card
+
+block content
+    .container
+        .mt-xl-12.mb-xl-3
+            -
+                const breadcrumbs = [
+                    {url: '#', title:'Главная', value:'Главная'},
+                    {url: '#', title:'Каталог', value:'Каталог'},
+                    {url: '#', title:'Мягкая мебель', value:'Мягкая мебель'},
+                    {url: '#', title:'Диваны', value:'Диваны'}
+                ]
+                const sofas = [
+                            {
+                                src:'/assets/images/item-06.jpg',
+                                title: 'Montreal',
+                                price: 10990
+                            },{
+                                src:'/assets/images/item-04.jpg',
+                                title: 'Glasgow',
+                                price: 19990
+                            },{
+                                src:'/assets/images/item-01.jpg',
+                                title: 'Munich',
+                                price: 24990
+                            },{
+                                src:'/assets/images/item-05.jpg',
+                                title: 'Alexandria',
+                                price: 109990
+                            },{
+                                src:'/assets/images/item-02.jpg',
+                                title: 'Karachi',
+                                price: 17990
+                            },{
+                                src:'/assets/images/item-03.jpg',
+                                title: 'Phoenix',
+                                price: 29990
+                            }
+                        ]
+            +breadcrumbs(breadcrumbs)
+        +page-title('Диваны')
+        .mt-xl-12
+            .row
+                .col-xl-5
+                .col-xl-18.offset-xl-1
+                    .row
+                        each item in sofas
+                            .col-xl-8 
+                                +item-card(item.src, item.title, item.price)

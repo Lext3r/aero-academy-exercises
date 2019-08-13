@@ -1,0 +1,37 @@
+.item-card-wrapper{
+    padding:20px;
+    width: 310px;
+        &:hover{
+            border-radius: 2px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+        }
+}
+.item-card{
+    display: flex;
+    flex-wrap: wrap;
+    &__title{
+        width:100%;
+        margin: 10px 0;
+    }
+    &__link{
+        color: black;
+        text-decoration:none;
+        cursor: pointer;
+    }
+    &__price{
+        margin:10px 0;
+        font-weight: bold;
+    }
+    &__price, &__buttons{
+        display: flex;
+        width:50%;
+    }
+    &__buttons{
+        justify-content: flex-end;
+        button{
+            background-color:white;
+            border: none;
+            cursor: pointer;
+        }
+    }   
+}

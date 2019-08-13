@@ -1,0 +1,8 @@
+.link{
+    color: color('grey-darkest');
+    text-decoration: none;
+    &:hover{
+        color: color('blue');
+        transition: color 0.3ms;
+    }
+}

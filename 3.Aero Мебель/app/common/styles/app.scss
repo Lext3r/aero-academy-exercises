@@ -19,12 +19,20 @@
 @import '../../components/logo/logo.scss';
 @import '../../components/icon-btn/icon-btn.scss';
 @import '../../components/search/search.scss';
+@import '../../components/input-text/input-text.scss';
 @import '../../components/menu/menu.scss';
 @import '../../components/breadcrumbs/breadcrumbs.scss';
 @import '../../components/link/link.scss';
 @import '../../components/page-title/page-title.scss';
 @import '../../components/item-card/item-card.scss';
-
+@import '../../components/input-checkbox/input-checkbox.scss';
+@import '../../components/color-filter-checkbox/color-filter-checkbox.scss';
+@import '../../components/filters-form/filters.form.scss';
+@import '../../components/filter/filter.scss';
+@import '../../components/checkbox-filter/checkbox-filter.scss';
+@import '../../components/color-filter/color-filter.scss';
+@import '../../components/btn/btn.scss';
+@import '../../components/footer-menu/footer-menu.scss';
 
 // Helpers
 @import '../styles/helpers/sprites.scss';

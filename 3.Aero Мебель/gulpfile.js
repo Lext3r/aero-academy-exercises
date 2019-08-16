@@ -122,6 +122,7 @@ gulp.task("watch", () => {
     gulp.watch(`${PATHS.app}/**/*.pug`, gulp.series("templates"));
     gulp.watch(`${PATHS.app}/**/*.scss`, gulp.series("styles"));
     gulp.watch(`${PATHS.app}/**/*.js`, gulp.series("scripts"));
+    gulp.watch(`${PATHS.app}/common/icons/**/*.svg`, gulp.series("icons"));
     gulp.watch(
         `${PATHS.app}/common/images/**/*.+(png|jpg|iso|jpeg|gif|svg)`,
         gulp.series("images")
@@ -140,7 +141,7 @@ gulp.task(
 gulp.task(
     "production",
     gulp.series(
-        "clear",
-        gulp.parallel("templates", "icons", "styles", "scripts", "images", "copy")
+        "clear","icons",
+        gulp.parallel("templates", "styles", "scripts", "images", "copy")
     )
 );

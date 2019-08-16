@@ -1,3 +1,7 @@
-mixin icon(name)
-	svg(class="icon icon-" + name)
-		use(xlink:href="assets/images/icons/sprite.svg#" + name)
+mixin icon(name, color)
+	if color
+		svg(class="icon icon-" + name, style="fill:" + color )
+			use(xlink:href="assets/images/icons/sprite.svg#" + name)
+	else
+		svg(class="icon icon-" + name)
+			use(xlink:href="assets/images/icons/sprite.svg#" + name)

@@ -5,8 +5,10 @@ include ../color-filter-checkbox/color-filter-checkbox
 mixin filters-form()
     form.filters-form
         +filter('Цвет', colors)(type="color")
+        .mt-xl-2
         +filter('Материал', materials)
         +filter('Угол', angles)
+        .mt-xl-2
         input.btn.btn_block.btn_primary(type="submit" value="Применить")
         .mt-xl-2
         input.btn.btn_block.btn_reset(type="reset" value="Очистить фильтр")

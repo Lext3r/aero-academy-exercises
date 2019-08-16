@@ -1,0 +1,21 @@
+.filter{
+    padding: 10px;
+    &__header, &__main{
+        display: flex;
+    }
+    &__header{
+        margin: 10px 0;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+    .icon-arrow-small{
+        transform: rotate(180deg);
+    }
+    width: 100%;
+    .icon-btn__icon{
+        fill: color('black');
+        &:hover{
+            fill: color('blue');
+        }
+    }
+}

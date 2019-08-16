@@ -1,2 +1,17 @@
+include ../footer-menu/footer-menu
+
 mixin footer()
-    footer.footer Footer content
+    footer.footer
+        .container
+            .row
+                .col-xl-15
+                    -const categories = ['Каталог','Оплата','Доставка','Возврат','Сборка','Помощь','Обратная связь'];
+                    +footer-menu(['Каталог','Оплата','Доставка','Возврат','Сборка','Помощь','Обратная связь'])
+                .col-xl-5.offset-xl-4
+                    .footer__contacts
+                        .footer__msg По любым вопросам обращайтесь:
+                        .footer__phone +7 499 242-12-54
+                .col-xl
+                    .footer__copyright &copy; 2019, Интернет-магазин мебели
+           
+                

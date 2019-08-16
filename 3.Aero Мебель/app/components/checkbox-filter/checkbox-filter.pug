@@ -1,0 +1,6 @@
+include ../input-checkbox/input-checkbox
+
+mixin checkbox-filter(options)
+    .checkbox-filter
+        each option in options
+            +input-checkbox(option.name, option.label)

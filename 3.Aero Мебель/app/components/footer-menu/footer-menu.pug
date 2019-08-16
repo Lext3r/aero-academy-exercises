@@ -1,0 +1,6 @@
+mixin footer-menu(list)
+    nav.footer-menu
+        ul.footer-menu__list
+            each category in list
+                li.footer-menu__category
+                    a.link.footer-menu__link(href="#", value=category)= category

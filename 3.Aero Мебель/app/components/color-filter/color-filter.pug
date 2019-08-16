@@ -1,0 +1,6 @@
+include ../color-filter-checkbox/color-filter-checkbox
+
+mixin color-filter(options)
+    .color-filter
+        each option in options
+            +color-filter-checkbox(option.name, option.color, option.arrow)

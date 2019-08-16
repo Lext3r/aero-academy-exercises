@@ -1,0 +1,16 @@
+mixin color-filter-checkbox(name, color, arrow_color)
+    if !arrow_color
+        -arrow_color = '#000000'
+    if !color
+        -color = '#ffffff'
+    if color === '#ffffff'
+        -var border_color = "#9b9b9b"
+    else
+        -border_color = color
+ 
+    label.color-filter-checkbox(style="background-color:" + color + "; border-color:" + border_color)
+        input.color-filter-checkbox__input(type='checkbox' name=name)
+        span.color-filter-checkbox__icon
+            +icon('check', arrow_color)
+
+        

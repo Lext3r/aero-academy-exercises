@@ -2,6 +2,7 @@ extends ../layout/default/default
 include ../components/breadcrumbs/breadcrumbs
 include ../components/page-title/page-title
 include ../components/item-card/item-card
+include ../components/filters-form/filters-form
 
 block content
     .container
@@ -13,31 +14,102 @@ block content
                     {url: '#', title:'Мягкая мебель', value:'Мягкая мебель'},
                     {url: '#', title:'Диваны', value:'Диваны'}
                 ]
+                const colors =[
+                    {
+                        name:'white',
+                        arrow:'#0566ff'
+                    },{
+                        name:'black',
+                        color:'#000000',
+                        arrow:'#ffffff'
+                    },{
+                        name:'grey',
+                        color:'#5a5a5a',
+                        arrow:'#ffffff'
+                    },{
+                        name:'brown',
+                        color:"#704d35",
+                        arrow:'#ffffff'
+                    },{
+                        name:'orange',
+                        color:"#e0791d",
+                        arrow:'#ffffff'
+                    },{
+                        name:'red',
+                        color:"#ba0606",
+                        arrow:'#ffffff'
+                    },{
+                        name:'green',
+                        color:"#38a01a",
+                        arrow:'#ffffff'
+                    },{
+                        name:'blue',
+                        color:"#314976",
+                        arrow:'#ffffff'
+                    },{
+                        name:'violet',
+                        color:"#3748a6",
+                        arrow:'#ffffff'
+                    }
+                ]
+                const materials = [
+                    {
+                        name:'velvet',
+                        label:'Вельвет'
+                    },{
+                        name:'micro_velor',
+                        label:'Микровелюр'
+                    },{
+                        name: 'velor',
+                        label:'Велюр'
+                    },{
+                        name: 'jacquard',
+                        label:'Жаккард'
+                    },{
+                        name: 'suede',
+                        label:'Замша'
+                    },{
+                        name: 'matting',
+                        label:'Рогожка'
+                    }
+                ];
+                const angles = [
+                    {
+                        name:'left',
+                        label:'Левый'
+                    },{
+                        name:'right',
+                        label:'Правый'
+                    },{
+                        name: 'uni',
+                        label:'Универсальный'
+                    }
+                ];
                 const sofas = [
                             {
                                 src:'/assets/images/item-06.jpg',
                                 title: 'Montreal',
-                                price: 10990
+                                price: '10&nbsp;990'
                             },{
                                 src:'/assets/images/item-04.jpg',
                                 title: 'Glasgow',
-                                price: 19990
+                                price: '19&nbsp;990'
                             },{
                                 src:'/assets/images/item-01.jpg',
                                 title: 'Munich',
-                                price: 24990
+                                price: '24&nbsp;990'
                             },{
                                 src:'/assets/images/item-05.jpg',
                                 title: 'Alexandria',
-                                price: 109990
+                                price: '109&nbsp;990'
                             },{
                                 src:'/assets/images/item-02.jpg',
                                 title: 'Karachi',
-                                price: 17990
+                                price: '17&nbsp;990'
                             },{
                                 src:'/assets/images/item-03.jpg',
                                 title: 'Phoenix',
-                                price: 29990
+                                price: '29&nbsp;990'
                             }
                         ]
             +breadcrumbs(breadcrumbs)
@@ -45,8 +117,10 @@ block content
         .mt-xl-12
             .row
                 .col-xl-5
+                    +filters-form()
                 .col-xl-18.offset-xl-1
                     .row
                         each item in sofas
                             .col-xl-8 
-                                +item-card(item.src, item.title, item.price)
+                                +item-card(item)
+        .mt-xl-20

@@ -9,6 +9,14 @@
 
     &__icon{
         margin-right: 8px;
+        &:last-child{
+            margin-right: 0;
+        }
+        fill: color('blue');
+
+        &:hover{
+            fill: color('dark-blue');
+        }
     }
     
     &__count{

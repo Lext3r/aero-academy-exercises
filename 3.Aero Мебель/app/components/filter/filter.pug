@@ -1,0 +1,14 @@
+include ../color-filter/color-filter
+include ../checkbox-filter/checkbox-filter
+
+mixin filter(title,options)
+    .filter
+        .filter__header
+            .filter__title= title
+            +icon-btn('arrow-small')
+        .filter__main
+            if attributes.type === 'color'
+                +color-filter(options)
+            else
+                +checkbox-filter(options)
+        

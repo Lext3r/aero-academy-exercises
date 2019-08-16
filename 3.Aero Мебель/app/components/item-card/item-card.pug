@@ -1,11 +1,11 @@
-mixin item-card(src, title, price)
-    .item-card-wrapper
-        .item-card
-            a.item-card__link(href="#")
-                img.item-card__img(src=src, alt=title)
-                span.item-card__title= title
-            span.item-card__price= price + ' руб.'
-            .item-card__buttons
-                +icon-btn('favourites')
-                +icon-btn('cart')
+mixin item-card(item)
+    .item-card
+        a.item-card__link(href="#")
+            img.item-card__img(src=item.src, alt=item.title)
+            span.item-card__title= item.title
+        span.item-card__price!= item.price
+            | &nbsp;руб.
+        .item-card__buttons
+            +icon-btn('favourites')
+            +icon-btn('cart')
 

@@ -1,0 +1,12 @@
+include ../filter/filter
+include ../input-checkbox/input-checkbox
+include ../color-filter-checkbox/color-filter-checkbox
+
+mixin filters-form()
+    form.filters-form
+        +filter('Цвет', colors)(type="color")
+        +filter('Материал', materials)
+        +filter('Угол', angles)
+        input.btn.btn_block.btn_primary(type="submit" value="Применить")
+        .mt-xl-2
+        input.btn.btn_block.btn_reset(type="reset" value="Очистить фильтр")

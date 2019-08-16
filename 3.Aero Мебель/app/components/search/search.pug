@@ -1,3 +1,5 @@
+include ../input-text/input-text
+
 mixin search()
     form(action="" class='search')
-        input(type="text" class='search__input' value="" placeholder="Поиск")
+        +input-text()(name='search-input' value='' placeholder='Поиск')

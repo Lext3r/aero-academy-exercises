@@ -66,17 +66,17 @@ block content
                 ]
 
     .container
-        .mt-xl-12.mb-xl-3
+        .mt-md-12.mb-md-3
             +breadcrumbs(breadcrumbs)
         +page-title('Диваны')
-        .mt-xl-12
-            .row
-                .col-xl-5
-                    +filters-form()
-                .col-xl-18.offset-xl-1
-                    .row
-                        each item in sofas
-                            .col-xl-8 
-                                +item-card(item)
-        .mt-xl-20
+        .mt-md-12
+        .row
+            .col-lg-5.col-md-8
+                +filters-form()
+            .col-lg-18.offset-lg-1.col-md-16
+                .row
+                    each item in sofas
+                        .col-lg-8.col-md-12.mb-md-4
+                            +item-card(item)
+        .mt-lg-20.mt-md-14
     

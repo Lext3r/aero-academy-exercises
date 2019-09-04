@@ -5,7 +5,8 @@ mixin filter(title,options)
     .filter
         .filter__header
             .filter__title= title
-            +icon-btn('arrow-small')
+            .filter__toogle
+                +icon('arrow-small')
         .filter__main
             if attributes.type === 'color'
                 +color-filter(options)

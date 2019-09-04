@@ -1,18 +1,37 @@
 .filter{
+    position: relative;
     padding: 10px 0;
     &__header, &__main{
         display: flex;
+    }
+    &__main{
+        position: relative;
+        opacity: 1;
+        animation: fadeIn $animation-time;
     }
     &__header{
         margin: 10px 0;
         font-weight: bold;
         justify-content: space-between;
+        &.is-active{
+            .icon-arrow-small{
+                transform: rotate(0deg);
+                transition: transform $animation-time;
+            }
+        }
+        &.is-active + .filter__main{
+            position: absolute;
+            opacity: 0;
+            animation: fadeOut $animation-time * 2;
+        }
     }
     .icon-arrow-small{
         transform: rotate(180deg);
+        transition: transform $animation-time;
     }
     width: 100%;
-    .icon-btn__icon{
+    &__toogle{
+        cursor: pointer;
         fill: color('black');
         &:hover{
             fill: color('blue');

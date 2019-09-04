@@ -4,14 +4,14 @@ mixin footer()
     footer.footer
         .container
             .row
-                .col-xl-15
+                .col-xl-15.col-lg-17.col-md-14
                     -const categories = ['Каталог','Оплата','Доставка','Возврат','Сборка','Помощь','Обратная связь'];
                     +footer-menu(['Каталог','Оплата','Доставка','Возврат','Сборка','Помощь','Обратная связь'])
-                .col-xl-5.offset-xl-4
+                .col-lg-5.offset-xl-4.offset-lg-2.col-md-8.offset-md-2
                     .footer__contacts
                         .footer__msg По любым вопросам обращайтесь:
                         .footer__phone +7 499 242-12-54
-                .col-xl
+                .col-lg.mt-md-4
                     .footer__copyright &copy; 2019, Интернет-магазин мебели
            
                 

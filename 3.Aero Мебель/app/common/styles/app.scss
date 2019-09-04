@@ -6,10 +6,16 @@
 @import 'variables/grid.scss';
 @import 'variables/animation.scss';
 
+// Helpers
+@import '../styles/helpers/sprites.scss';
+@import '../styles/helpers/bootstrap.scss';
+
+
 //Core styles
 @import 'core/fonts';
 @import 'core/base';
 @import 'core/typography';
+
 
 // Pages
 
@@ -34,6 +40,3 @@
 @import '../../components/btn/btn.scss';
 @import '../../components/footer-menu/footer-menu.scss';
 
-// Helpers
-@import '../styles/helpers/sprites.scss';
-@import '../styles/helpers/bootstrap.scss';

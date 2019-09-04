@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link href="/assets/styles/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="row align-items-md-center">
+              <div class="col-lg-4 col-md-6"><a class="logo" href="/"><img class="logo__img" src="assets/images/logo.svg" alt="Logo"/></a>
+              </div>
+              <div class="col-md-12 offset-lg-2">
+                <form class="search" action="">
+                  <input class="input-text" type="text" name="search-input" value="" placeholder="Поиск"/>
+                </form>
+              </div>
+              <div class="col-lg-3 offset-lg-2 col-md-6">
+                <header class="header__btns">
+                  <button class="icon-btn"><span class="icon-btn__icon">
+                      <svg class="icon icon-favourites">
+                        <use xlink:href="assets/images/icons/sprite.svg#favourites"></use>
+                      </svg></span><span class="icon-btn__count">10</span>
+                  </button>
+                  <button class="icon-btn"><span class="icon-btn__icon">
+                      <svg class="icon icon-cart">
+                        <use xlink:href="assets/images/icons/sprite.svg#cart"></use>
+                      </svg></span><span class="icon-btn__count">2</span>
+                  </button>
+                </header>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__category"><a class="menu__link link" href="#">Мебель</a>
+                  <ul class="menu__subcategories">
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Мягкая мебель</a></li>
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Столы</a></li>
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Стулья</a></li>
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Стеллажи</a></li>
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Шкафы-купе</a></li>
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Мягкая мебель</a></li>
+                  </ul>
+                </li>
+                <li class="menu__category"><a class="menu__link link" href="#">Хранение</a>
+                  <ul class="menu__subcategories">
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Шкафы</a></li>
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Полки</a></li>
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Комоды</a></li>
+                  </ul>
+                </li>
+                <li class="menu__category"><a class="menu__link link" href="#">Спальня</a>
+                  <ul class="menu__subcategories">
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Кровати</a></li>
+                    <li class="menu__subcategory"><a class="menu__sub-link link" href="#">Диваны</a></li>
+                  </ul>
+                </li>
+                <li class="menu__category"><a class="menu__link link" href="#">Кухня</a>
+                </li>
+                <li class="menu__category"><a class="menu__link link" href="#">Аксессуары</a>
+                </li>
+                <li class="menu__category"><a class="menu__link link" href="#">Акции</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="mt-md-12 mb-md-3">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="link" href="#" title="Главная">Главная</a><span class="breadcrumbs__separator">/</span></li>
+              <li class="breadcrumbs__item"><a class="link" href="#" title="Каталог">Каталог</a><span class="breadcrumbs__separator">/</span></li>
+              <li class="breadcrumbs__item"><a class="link" href="#" title="Мягкая мебель">Мягкая мебель</a><span class="breadcrumbs__separator">/</span></li>
+              <li class="breadcrumbs__item">Диваны</li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-title">
+          <h1>Диваны</h1>
+        </div>
+        <div class="mt-md-12"></div>
+        <div class="row">
+          <div class="col-lg-5 col-md-8">
+            <form class="filters-form">
+              <div class="filter">
+                <div class="filter__header">
+                  <div class="filter__title">Цвет</div>
+                  <div class="filter__toogle">
+                    <svg class="icon icon-arrow-small">
+                      <use xlink:href="assets/images/icons/sprite.svg#arrow-small"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="filter__main">
+                  <div class="color-filter">
+                    <label class="color-filter-checkbox" style="background-color:#ffffff; border-color:#9b9b9b">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="white"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#0566ff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="color-filter-checkbox" style="background-color:#000000; border-color:#000000">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="black"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#ffffff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="color-filter-checkbox" style="background-color:#5a5a5a; border-color:#5a5a5a">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="grey"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#ffffff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="color-filter-checkbox" style="background-color:#704d35; border-color:#704d35">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="brown"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#ffffff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="color-filter-checkbox" style="background-color:#e0791d; border-color:#e0791d">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="orange"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#ffffff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="color-filter-checkbox" style="background-color:#ba0606; border-color:#ba0606">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="red"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#ffffff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="color-filter-checkbox" style="background-color:#38a01a; border-color:#38a01a">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="green"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#ffffff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="color-filter-checkbox" style="background-color:#314976; border-color:#314976">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="blue"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#ffffff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="color-filter-checkbox" style="background-color:#3748a6; border-color:#3748a6">
+                      <input class="color-filter-checkbox__input" type="checkbox" name="violet"/><span class="color-filter-checkbox__icon">
+                        <svg class="icon icon-check" style="fill:#ffffff">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-xl-2"></div>
+              <div class="filter">
+                <div class="filter__header">
+                  <div class="filter__title">Материал</div>
+                  <div class="filter__toogle">
+                    <svg class="icon icon-arrow-small">
+                      <use xlink:href="assets/images/icons/sprite.svg#arrow-small"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="filter__main">
+                  <div class="checkbox-filter">
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="velvet"/><span class="input-checkbox__label">Вельвет</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="micro_velor"/><span class="input-checkbox__label">Микровелюр</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="velor"/><span class="input-checkbox__label">Велюр</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="jacquard"/><span class="input-checkbox__label">Жаккард</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="suede"/><span class="input-checkbox__label">Замша</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="matting"/><span class="input-checkbox__label">Рогожка</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter">
+                <div class="filter__header">
+                  <div class="filter__title">Угол</div>
+                  <div class="filter__toogle">
+                    <svg class="icon icon-arrow-small">
+                      <use xlink:href="assets/images/icons/sprite.svg#arrow-small"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="filter__main">
+                  <div class="checkbox-filter">
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="left"/><span class="input-checkbox__label">Левый</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="right"/><span class="input-checkbox__label">Правый</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                    <label class="input-checkbox">
+                      <input class="input-checkbox__input" type="checkbox" name="uni"/><span class="input-checkbox__label">Универсальный</span><span class="input-checkbox__icon">
+                        <svg class="icon icon-check">
+                          <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                        </svg></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-xl-2"></div>
+              <input class="btn btn_block btn_primary" type="submit" value="Применить"/>
+              <div class="mt-xl-2"></div>
+              <input class="btn btn_block btn_reset" type="reset" value="Очистить фильтр"/>
+            </form>
+          </div>
+          <div class="col-lg-18 offset-lg-1 col-md-16">
+            <div class="row">
+              <div class="col-lg-8 col-md-12 mb-md-4">
+                <div class="item-card"><a class="item-card__link" href="#"><img class="item-card__img" src="/assets/images/item-04.jpg" alt="Montreal"/><span class="item-card__title">Montreal</span></a><span class="item-card__price">10&nbsp;990&nbsp;руб.</span>
+                  <div class="item-card__buttons">
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-favourites">
+                          <use xlink:href="assets/images/icons/sprite.svg#favourites"></use>
+                        </svg></span>
+                    </button>
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-cart">
+                          <use xlink:href="assets/images/icons/sprite.svg#cart"></use>
+                        </svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 mb-md-4">
+                <div class="item-card"><a class="item-card__link" href="#"><img class="item-card__img" src="/assets/images/item-06.jpg" alt="Glasgow"/><span class="item-card__title">Glasgow</span></a><span class="item-card__price">19&nbsp;990&nbsp;руб.</span>
+                  <div class="item-card__buttons">
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-favourites">
+                          <use xlink:href="assets/images/icons/sprite.svg#favourites"></use>
+                        </svg></span>
+                    </button>
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-cart">
+                          <use xlink:href="assets/images/icons/sprite.svg#cart"></use>
+                        </svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 mb-md-4">
+                <div class="item-card"><a class="item-card__link" href="#"><img class="item-card__img" src="/assets/images/item-01.jpg" alt="Munich"/><span class="item-card__title">Munich</span></a><span class="item-card__price">24&nbsp;990&nbsp;руб.</span>
+                  <div class="item-card__buttons">
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-favourites">
+                          <use xlink:href="assets/images/icons/sprite.svg#favourites"></use>
+                        </svg></span>
+                    </button>
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-cart">
+                          <use xlink:href="assets/images/icons/sprite.svg#cart"></use>
+                        </svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 mb-md-4">
+                <div class="item-card"><a class="item-card__link" href="#"><img class="item-card__img" src="/assets/images/item-05.jpg" alt="Alexandria"/><span class="item-card__title">Alexandria</span></a><span class="item-card__price">109&nbsp;990&nbsp;руб.</span>
+                  <div class="item-card__buttons">
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-favourites">
+                          <use xlink:href="assets/images/icons/sprite.svg#favourites"></use>
+                        </svg></span>
+                    </button>
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-cart">
+                          <use xlink:href="assets/images/icons/sprite.svg#cart"></use>
+                        </svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 mb-md-4">
+                <div class="item-card"><a class="item-card__link" href="#"><img class="item-card__img" src="/assets/images/item-02.jpg" alt="Karachi"/><span class="item-card__title">Karachi</span></a><span class="item-card__price">17&nbsp;990&nbsp;руб.</span>
+                  <div class="item-card__buttons">
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-favourites">
+                          <use xlink:href="assets/images/icons/sprite.svg#favourites"></use>
+                        </svg></span>
+                    </button>
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-cart">
+                          <use xlink:href="assets/images/icons/sprite.svg#cart"></use>
+                        </svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 mb-md-4">
+                <div class="item-card"><a class="item-card__link" href="#"><img class="item-card__img" src="/assets/images/item-03.jpg" alt="Phoenix"/><span class="item-card__title">Phoenix</span></a><span class="item-card__price">29&nbsp;990&nbsp;руб.</span>
+                  <div class="item-card__buttons">
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-favourites">
+                          <use xlink:href="assets/images/icons/sprite.svg#favourites"></use>
+                        </svg></span>
+                    </button>
+                    <button class="icon-btn"><span class="icon-btn__icon">
+                        <svg class="icon icon-cart">
+                          <use xlink:href="assets/images/icons/sprite.svg#cart"></use>
+                        </svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-lg-20 mt-md-14"></div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-15 col-lg-17 col-md-14">
+              <nav class="footer-menu">
+                <ul class="footer-menu__list">
+                  <li class="footer-menu__category"><a class="link footer-menu__link" href="#" value="Каталог">Каталог</a></li>
+                  <li class="footer-menu__category"><a class="link footer-menu__link" href="#" value="Оплата">Оплата</a></li>
+                  <li class="footer-menu__category"><a class="link footer-menu__link" href="#" value="Доставка">Доставка</a></li>
+                  <li class="footer-menu__category"><a class="link footer-menu__link" href="#" value="Возврат">Возврат</a></li>
+                  <li class="footer-menu__category"><a class="link footer-menu__link" href="#" value="Сборка">Сборка</a></li>
+                  <li class="footer-menu__category"><a class="link footer-menu__link" href="#" value="Помощь">Помощь</a></li>
+                  <li class="footer-menu__category"><a class="link footer-menu__link" href="#" value="Обратная связь">Обратная связь</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-5 offset-xl-4 offset-lg-2 col-md-8 offset-md-2">
+              <div class="footer__contacts">
+                <div class="footer__msg">По любым вопросам обращайтесь:</div>
+                <div class="footer__phone">+7 499 242-12-54</div>
+              </div>
+            </div>
+            <div class="col-lg mt-md-4">
+              <div class="footer__copyright">&copy; 2019, Интернет-магазин мебели</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="/assets/scripts/app.min.js"></script>
+    </main>
+  </body>
+</html>

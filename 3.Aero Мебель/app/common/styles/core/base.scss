@@ -39,5 +39,8 @@ ol {
     width: 100%;
     max-width: 1340px;
     padding: 0 20px;
+    @include media-breakpoint-down(md) {
+        padding: 0 35px;
+    }
     margin: 0 auto; 
 }

@@ -1,6 +1,7 @@
 .footer-menu{
     &__list{
         display: flex;
+        flex-wrap: wrap;
     }
     &__category{
         font-size: 14px;
@@ -8,6 +9,9 @@
         padding: 4px 15px;
         background-color: color('white');
         margin-right: 5px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 5px;
+        }
         &:last-child{
             margin-right: 0;
         }
